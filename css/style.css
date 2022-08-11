@@ -1,0 +1,477 @@
+#wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*---▼#mainvisualここから▼---*/
+#mainvisual {
+  height: 100vh;
+  position: relative;
+}
+
+#mainvisual svg {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mainvisual svg path {
+  fill-opacity: 0;
+  transition: fill-opacity 0.5s;
+  fill: none;
+  stroke: #0e536d;
+  stroke-width: 4px;
+}
+
+#mainvisual svg.done path {
+  fill: #0e536d;
+  fill-opacity: 1;
+  stroke: none;
+}
+
+.fadein {
+  color: #fff;
+  font-family: "Sacramento", cursive;
+  font-size: 5em;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: fadeinAnime;
+  animation-duration: 3.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeinAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*---▼.scrolldownここから▼---*/
+.scrolldown {
+  position: absolute;
+  bottom: 1%;
+  right: 50%;
+  animation: arrowmove 1.5s ease-in-out infinite;
+}
+
+@keyframes arrowmove {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+
+.scrolldown span {
+  position: absolute;
+  left: -20px;
+  bottom: 10px;
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+  writing-mode: vertical-rl;
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  width: 1px;
+  height: 20px;
+  background-color: #0e536d;
+  transform: skewX(-31deg);
+}
+
+.scrolldown::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 42px;
+  background-color: #0e536d;
+}
+/*---▲.scrolldownここまで▲---*/
+/*---▲#mainvisualここまで▲---*/
+
+/*---▼#mainここから▼---*/
+/*---▼#aboutここから▼---*/
+#about,
+#works {
+  height: 100vh;
+  position: relative;
+}
+
+h2 {
+  font-size: 64px;
+  font-family: ab-omusubi, sans-serif;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+#about .about_inner {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*---▼.profここから▼---*/
+#about .prof {
+  display: flex;
+  justify-content: center;
+}
+
+.fadeInUpTrigger,
+.fadeInUpTrigger2,
+.fadeInUpTrigger3,
+.fadeInUpTrigger4,
+.fadeInUpTrigger5 {
+  opacity: 0;
+}
+
+#about img {
+  max-width: 30%;
+  width: 220px;
+  height: fit-content;
+  margin: auto 0;
+}
+
+#about .prof_inner {
+  width: 416px;
+  height: 190px;
+  box-shadow: 6px 6px 10px rgba(14, 83, 109, 0.25);
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#about .prof_inner h3 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+#about .prof_inner .text {
+  font-size: 14px;
+}
+
+#about .prof_inner .no-pc {
+  display: none;
+}
+
+@keyframes border_anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*---▼ボタンデザイン▼---*/
+#about .prof_inner .btn {
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1em 4em;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #0e536d;
+  border-radius: 8px;
+}
+
+#about .prof_inner .border-radius {
+  border-radius: 100vh;
+}
+
+#about .prof_inner .btn-border-sahdow {
+  padding: 12px 36px 18px;
+  background: #f6b7aa;
+  margin-top: 20px;
+}
+
+#about .prof_inner .btn-border-sahdow::before {
+  position: absolute;
+  top: -8px;
+  left: -7px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: all 0.3s ease;
+  border: 2px solid #0e536d;
+  border-radius: 8px;
+}
+
+#about .prof_inner .border-radius::before {
+  border-radius: 100vh;
+}
+
+#about .prof_inner .btn-border-sahdow:hover::before {
+  top: 0;
+  left: 0;
+}
+/*---▲#ボタンデザイン▲---*/
+/*---▲.profここまで▲---*/
+
+/*---▼.skillここから▼---*/
+#about .skill {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#about .skill_inner {
+  width: 170px;
+  position: relative;
+}
+
+#about .skill_inner::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px dotted #0e536d;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+#about .skill_item {
+  padding-top: 100%;
+  background-color: #f6b7aa;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px rgba(14, 83, 109, 0.25);
+}
+
+#about .skill_item-inner {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#about .skill_item h3 {
+  font-family: ab-omusubi, sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+#about .skill_item p {
+  font-size: 0.75em;
+  text-align: center;
+  width: 140px;
+  height: 60px;
+  padding-top: 14px;
+}
+/*---▲.skillここまで▲---*/
+/*---▲#aboutここまで▲---*/
+
+/*---▼#worksここから▼---*/
+/*---▼.sliderここから▼---*/
+#works {
+  width: 100%;
+}
+
+#works h2 {
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+#works .slider {
+  width: 94%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#works .slider li a {
+  display: block;
+  width: 60vw;
+}
+
+#works .slider li a:hover {
+  background-color: #fff;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+#works .slider img {
+  width: 60vw;
+  height: auto;
+}
+
+#works .slider .slick-slide {
+  transform: scale(0.8);
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+
+#works .slider .slick-slide.slick-center {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*矢印の設定*/
+#works .slick-prev,
+#works .slick-next {
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #0e536d;
+  border-right: 2px solid #0e536d;
+  height: 15px;
+  width: 15px;
+}
+
+#works .slick-prev {
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+#works .slick-next {
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+#works .slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+#works .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#works .slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background: #f6b7aa;
+}
+
+#works .slick-dots .slick-active button {
+  background: #0e536d;
+}
+/*---▲.sliderここまで▲---*/
+/*---▲#worksここまで▲---*/
+/*---▲#mainここまで▲---*/
+
+@media screen and (max-width: 1024px) {
+  #wrap {
+    max-width: 1024px;
+    width: 100%;
+  }
+  /*---▼#mainここから▼---*/
+  /*---▼#aboutここから▼---*/
+  /*---▼.profここから▼---*/
+  #about .prof_inner {
+    width: 300px;
+    text-align: center;
+  }
+
+  #about .prof_inner .no-pc {
+    display: inline-block;
+  }
+  /*---▲.profここまで▲---*/
+  #about .skill {
+    flex-wrap: wrap;
+  }
+
+  #about .skill_inner {
+    width: 20%;
+  }
+  /*---▲.skillここまで▲---*/
+  /*---▲#aboutここまで▲---*/
+  #works {
+    height: 600px;
+  }
+  /*---▲#mainここまで▲---*/
+}
+
+@media screen and (max-width: 599px) {
+  #wrap {
+    max-width: 599px;
+    width: 100%;
+  }
+
+  /*---▼#mainここから▼---*/
+  /*---▼#aboutここから▼---*/
+  /*---▼.profここから▼---*/
+  #about .prof {
+    flex-wrap: wrap;
+  }
+  #about .prof_inner {
+    width: 320px;
+  }
+  /*---▲.profここまで▲---*/
+  /*---▼.skillここから▼---*/
+  #about img {
+    max-width: 50%;
+  }
+
+  #about .skill_inner {
+    margin: 12px 10px;
+  }
+
+  #about .skill_inner {
+    width: 40%;
+    position: relative;
+  }
+
+  #about .skill_inner::after {
+    border-radius: 10px;
+  }
+  #about .skill_item {
+    padding-top: 0;
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  #about .skill_item p {
+    padding-top: 6px;
+  }
+  /*---▲.skillここまで▲---*/
+  /*---▲#aboutここまで▲---*/
+  #works .slick-prev,
+  #works .slick-next {
+    display: none;
+  }
+
+  #works {
+    height: 450px;
+    margin-top: 60px;
+  }
+
+  #works h2 {
+    padding-top: 0px;
+  }
+  /*---▲#mainここまで▲---*/
+}
