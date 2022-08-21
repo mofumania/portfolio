@@ -283,13 +283,11 @@ h2 {
   stroke-width: 10;
   stroke: #fff;
   stroke-dasharray: 440;
-  stroke-dashoffset: 0;
   stroke-linecap: round;
   position: relative;
 }
 
 #skill .skill_item .line {
-  /* stroke-dashoffset: calc(440 - (440 * 88) / 100); */
   stroke: #0e536d;
   animation: circleAnim 3s forwards;
 }
