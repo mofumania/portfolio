@@ -302,7 +302,7 @@ h2 {
 }
 
 #skill .skill_item01 .line {
-  stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke-dashoffset: 132px;
 }
 
 #skill .skill_item02 .line {
@@ -310,19 +310,19 @@ h2 {
 }
 
 #skill .skill_item03 .line {
-  stroke-dashoffset: calc(440 - (440 * 40) / 100);
+  stroke-dashoffset: 264px;
 }
 
 #skill .skill_item04 .line {
-  stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke-dashoffset: 132px;
 }
 
 #skill .skill_item05 .line {
-  stroke-dashoffset: calc(440 - (440 * 50) / 100);
+  stroke-dashoffset: 220px;
 }
 
 #skill .skill_item06 .line {
-  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+  stroke-dashoffset: 88px;
 }
 
 #skill .skill_item .skill_ttl {
