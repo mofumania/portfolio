@@ -35,39 +35,40 @@
 </head>
 
 <body>
-  <div id="wrap">
-    <header id="header">
-      <div class="header-inner">
-        <h1><a href="index.html"><img src="./img/suzuki-icon.png" alt="アイコン"> すずきもえかの<br>ポートフォリオ</a></h1>
+  <header id="header" class="wrap">
+    <div class="header-inner">
+      <h1><a href="index.html"><img src="./img/suzuki-icon.png" alt="アイコン"> すずきもえかの<br>ポートフォリオ</a></h1>
 
-        <nav id="g-nav">
+      <nav id="g-nav">
+        <ul>
+          <li><a href="index.html"><span class="menu_en">top</span><span class="menu_ja">トップページ</span></a></li>
+          <li><a href="about.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
+          <li><a href="works.html"><span class="menu_en">works</span><span class="menu_ja">制作物</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--.header-inner-->
+    <div class="sp-only">
+      <div class="openbtn"><span></span><span></span><span></span></div>
+      <nav id="g-nav_sp">
+        <div id="g-nav-list">
           <ul>
-            <li><a href="index.html"><span class="menu_en">top</span><span class="menu_ja">トップページ</span></a></li>
-            <li><a href="about.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
-            <li><a href="works.html"><span class="menu_en">works</span><span class="menu_ja">制作物</span></a></li>
+            <li><a href="index.html"><span class="menu_en">top</span>・・・・・<span class="menu_ja">トップページ</span></a>
+            </li>
+            <li><a href="about.html"><span class="menu_en">about</span>・・<span class="menu_ja">わたしについて</span></a>
+            </li>
+            <li><a href="works.html"><span class="menu_en">works</span>・・・・・・・<span class="menu_ja">制作物</span></a>
+            </li>
           </ul>
-        </nav>
-      </div>
-      <!--.header-inner-->
-      <div class="sp-only">
-        <div class="openbtn"><span></span><span></span><span></span></div>
-        <nav id="g-nav_sp">
-          <div id="g-nav-list">
-            <ul>
-              <li><a href="index.html"><span class="menu_en">top</span>・・・・・<span class="menu_ja">トップページ</span></a>
-              </li>
-              <li><a href="about.html"><span class="menu_en">about</span>・・<span class="menu_ja">わたしについて</span></a>
-              </li>
-              <li><a href="works.html"><span class="menu_en">works</span>・・・・・・・<span class="menu_ja">制作物</span></a>
-              </li>
-            </ul>
-          </div>
-          <!--.g-nav-list-->
-        </nav>
-        <div class="circle-bg"></div>
-      </div>
-      <!--.sp-only-->
-    </header>
+        </div>
+        <!--.g-nav-list-->
+      </nav>
+      <div class="circle-bg"></div>
+    </div>
+    <!--.sp-only-->
+  </header>
+
+  <div class="wrap">
     <main id="main">
       <div id="hero">
         <div class="hero-inner">
@@ -127,9 +128,9 @@
         <div class="scrolldown"><span>scroll</span></div>
       </div>
       <!--#hero-->
-      <section id="about" class="contents">
+      <section id="about" class="contents fadeInUpTrigger">
         <h3>about</h3>
-        <div class="prof fadeInUpTrigger">
+        <div class="prof">
           <img src="./img/suzuki.png" alt="すずきもえか" width="596" height="596">
           <div class="prof-inner">
             <h4>すずき　もえか</h4>
@@ -141,7 +142,7 @@
         </div>
         <!--.prof-->
         <div id="skill">
-          <div class="skill-item fadeInUpTrigger01">
+          <div class="skill-item">
             <div class="skill-item-inner">
               <h5>HTML</h5>
               <p>2022年1月勉強開始<br>JavaScript勉強中</p>
@@ -150,19 +151,19 @@
           </div>
           <!--.skill-item-->
 
-          <div class="skill-item fadeInUpTrigger02">
+          <div class="skill-item">
             <h5>CSS</h5>
             <p>2022年1月勉強開始<br>jQuery勉強中<br>Sass勉強予定</p>
           </div>
           <!--.skill-item-->
 
-          <div class="skill-item fadeInUpTrigger03">
+          <div class="skill-item">
             <h5>illustrator</h5>
             <p>2016年<br>クリエイター能力<br>認定試験EX取得</p>
           </div>
           <!--.skill-item-->
 
-          <div class="skill-item fadeInUpTrigger04">
+          <div class="skill-item">
             <h5>photoshop</h5>
             <p>2016年<br>クリエイター能力<br>認定試験EX取得</p>
           </div>
@@ -244,7 +245,7 @@
       <!--#works-->
     </main>
   </div>
-  <!--#wrap-->
+  <!--.wrap-->
   <footer id="footer">
     <p id="page-top"><a href="#"></a></p>
     <p class="copyright">&copy;2022 suzuki moeka's portforio</p>

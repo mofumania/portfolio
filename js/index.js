@@ -49,39 +49,3 @@ $(".fadeInUpTrigger").on("inview", function (event, isInView) {
     $(this).addClass("animate__animated animate__fadeInUp"); //クラス名が付与
   }
 });
-
-$(".fadeInUpTrigger01").on("inview", function (event, isInView) {
-  if (isInView) {
-    //表示領域に入った時
-    $(this).addClass(
-      "animate__animated animate__fadeInRight animate__delay-1s"
-    ); //クラス名が付与
-  }
-});
-
-$(".fadeInUpTrigger02").on("inview", function (event, isInView) {
-  if (isInView) {
-    //表示領域に入った時
-    $(this).addClass(
-      "animate__animated animate__fadeInRight animate__delay-2s"
-    ); //クラス名が付与
-  }
-});
-
-$(".fadeInUpTrigger03").on("inview", function (event, isInView) {
-  if (isInView) {
-    //表示領域に入った時
-    $(this).addClass(
-      "animate__animated animate__fadeInRight animate__delay-3s"
-    ); //クラス名が付与
-  }
-});
-
-$(".fadeInUpTrigger04").on("inview", function (event, isInView) {
-  if (isInView) {
-    //表示領域に入った時
-    $(this).addClass(
-      "animate__animated animate__fadeInRight animate__delay-4s"
-    ); //クラス名が付与
-  }
-});

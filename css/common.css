@@ -38,11 +38,6 @@ li {
   list-style: none;
 }
 
-#wrap {
-  width: min(92%, 1166px);
-  margin: auto;
-}
-
 /*---▼#headerここから▼---*/
 #header {
   height: 84px;
@@ -290,10 +285,16 @@ li {
     left: 14px;
     transform: translateY(-6px) rotate(45deg);
   }
-  /*---▲ボタンの設定ここまで▲---*/
-  /*---▲#hamburger-menuここまで▲---*/
-  /*---▲#headerここまで▲---*/
 }
+/*---▲ボタンの設定ここまで▲---*/
+/*---▲#hamburger-menuここまで▲---*/
+/*---▲#headerここまで▲---*/
+
+.wrap {
+  width: min(92%, 1166px);
+  margin: auto;
+}
+
 /*---▼#footerここから▼---*/
 #footer {
   background-color: #0e536d;

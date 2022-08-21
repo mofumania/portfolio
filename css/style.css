@@ -2,6 +2,7 @@
 #hero {
   width: 100%;
   height: calc(100vh - 84px);
+  margin-bottom: 300px;
   position: relative;
   z-index: 1;
 }
@@ -104,14 +105,9 @@
 /*---▲.scrolldownここまで▲---*/
 /*---▲#heroここまで▲---*/
 
-.contents {
-  padding-top: 100px;
-}
-
 @media (max-width: 767px) {
   .contents {
     height: auto;
-    padding-top: 300px;
   }
 }
 
@@ -141,11 +137,7 @@ h3 {
   }
 }
 
-.fadeInUpTrigger,
-.fadeInUpTrigger01,
-.fadeInUpTrigger02,
-.fadeInUpTrigger03,
-.fadeInUpTrigger04 {
+.fadeInUpTrigger {
   opacity: 0;
 }
 
@@ -245,6 +237,24 @@ h3 {
   position: relative;
 }
 
+#skill .skill-item.is-animated {
+  animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,
+  100% {
+    opacity: 1;
+  }
+}
+
 #skill .skill-item::before {
   content: "";
   display: inline-block;
@@ -265,11 +275,13 @@ h3 {
 #skill p {
   font-size: clamp(13px, 1.4vw, 16px);
 }
+
 /*---▲#skillここまで▲---*/
 /*---▲#aboutここまで▲---*/
 
 /*---▼#worksここから▼---*/
 #works {
+  padding-top: 300px;
   padding-bottom: 120px;
 }
 
