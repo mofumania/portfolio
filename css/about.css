@@ -306,7 +306,7 @@ h2 {
 }
 
 #skill .skill_item02 .line {
-  stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke-dashoffset: 132px;
 }
 
 #skill .skill_item03 .line {
