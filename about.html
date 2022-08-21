@@ -35,40 +35,39 @@
 </head>
 
 <body>
-  <div id="wrap">
-    <header id="header">
-      <div class="header-inner">
-        <h1><a href="index.html"><img src="./img/suzuki-icon.png" alt="アイコン"> すずきもえかの<br>ポートフォリオ</a></h1>
-
-        <nav id="g-nav">
+  <header id="header" class="wrap">
+    <div class="header-inner">
+      <h1><a href="index.html"><img src="./img/suzuki-icon.png" alt="アイコン"> すずきもえかの<br>ポートフォリオ</a></h1>
+      <nav id="g-nav">
+        <ul>
+          <li><a href="index.html"><span class="menu_en">top</span><span class="menu_ja">トップページ</span></a></li>
+          <li><a href="about.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
+          <li><a href="works.html"><span class="menu_en">works</span><span class="menu_ja">制作物</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--.header-inner-->
+    <div class="sp-only">
+      <div class="openbtn"><span></span><span></span><span></span></div>
+      <nav id="g-nav_sp">
+        <div id="g-nav-list">
           <ul>
-            <li><a href="index.html"><span class="menu_en">top</span><span class="menu_ja">トップページ</span></a></li>
-            <li><a href="about.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
-            <li><a href="works.html"><span class="menu_en">works</span><span class="menu_ja">制作物</span></a></li>
+            <li><a href="index.html"><span class="menu_en">top</span>・・・・・<span class="menu_ja">トップページ</span></a>
+            </li>
+            <li><a href="about.html"><span class="menu_en">about</span>・・<span class="menu_ja">わたしについて</span></a>
+            </li>
+            <li><a href="works.html"><span class="menu_en">works</span>・・・・・・・<span class="menu_ja">制作物</span></a>
+            </li>
           </ul>
-        </nav>
-      </div>
-      <!--.header-inner-->
-      <div class="sp-only">
-        <div class="openbtn"><span></span><span></span><span></span></div>
-        <nav id="g-nav_sp">
-          <div id="g-nav-list">
-            <ul>
-              <li><a href="index.html"><span class="menu_en">top</span>・・・・・<span class="menu_ja">トップページ</span></a>
-              </li>
-              <li><a href="about.html"><span class="menu_en">about</span>・・<span class="menu_ja">わたしについて</span></a>
-              </li>
-              <li><a href="works.html"><span class="menu_en">works</span>・・・・・・・<span class="menu_ja">制作物</span></a>
-              </li>
-            </ul>
-          </div>
-          <!--.g-nav-list-->
-        </nav>
-        <div class="circle-bg"></div>
-      </div>
-      <!--.sp-only-->
-    </header>
+        </div>
+        <!--.g-nav-list-->
+      </nav>
+      <div class="circle-bg"></div>
+    </div>
+    <!--.sp-only-->
+  </header>
 
+  <div class="wrap">
     <main id="main">
       <div class="about-inner">
         <section id="personal">
@@ -242,7 +241,7 @@
       <!--#skill-->
     </main>
   </div>
-  <!--#wrap-->
+  <!--.wrap-->
 
   <footer id="footer">
     <p id="page-top"><a href="#"></a></p>

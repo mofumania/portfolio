@@ -35,53 +35,54 @@
 </head>
 
 <body>
-  <div id="wrap">
-    <header id="header">
-      <div class="header-inner">
-        <h1><a href="index.html"><img src="./img/suzuki-icon.png" alt="アイコン"> すずきもえかの<br>ポートフォリオ</a></h1>
+  <header id="header" class="wrap">
+    <div class="header-inner">
+      <h1><a href="index.html"><img src="./img/suzuki-icon.png" alt="アイコン"> すずきもえかの<br>ポートフォリオ</a></h1>
 
-        <nav id="g-nav">
+      <nav id="g-nav">
+        <ul>
+          <li><a href="index.html"><span class="menu_en">top</span><span class="menu_ja">トップページ</span></a></li>
+          <li><a href="about.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
+          <li><a href="works.html"><span class="menu_en">works</span><span class="menu_ja">制作物</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--.header-inner-->
+    <div class="sp-only">
+      <div class="openbtn"><span></span><span></span><span></span></div>
+      <nav id="g-nav_sp">
+        <div id="g-nav-list">
           <ul>
-            <li><a href="index.html"><span class="menu_en">top</span><span class="menu_ja">トップページ</span></a></li>
-            <li><a href="about.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
-            <li><a href="works.html"><span class="menu_en">works</span><span class="menu_ja">制作物</span></a></li>
-          </ul>
-        </nav>
-      </div>
-      <!--.header-inner-->
-      <div class="sp-only">
-        <div class="openbtn"><span></span><span></span><span></span></div>
-        <nav id="g-nav_sp">
-          <div id="g-nav-list">
-            <ul>
-              <li><a href="index.html"><span class="menu_en">top</span>・・・・・<span class="menu_ja">トップページ</span></a>
-              </li>
-              <li><a href="about.html"><span class="menu_en">about</span>・・<span class="menu_ja">わたしについて</span></a>
-              </li>
-              <li><a href="works.html"><span class="menu_en">works</span>・・・・・・・<span class="menu_ja">制作物</span></a>
-              </li>
-            </ul>
-          </div>
-          <!--.g-nav-list-->
-        </nav>
-        <div class="circle-bg"></div>
-      </div>
-      <!--.sp-only-->
-
-      <div id="accordion-area">
-        <h3 class="title">works index</h3>
-        <div class="accordion_inner">
-          <ul>
-            <li><a href="#portfolio">ポートフォリオ</a></li>
-            <li><a href="#hb-logo">バーガーショップロゴ</a></li>
-            <li><a href="#hair-salon">ヘアサロン(架空)</a></li>
-            <li><a href="#cafe">カフェ(架空)</a></li>
+            <li><a href="index.html"><span class="menu_en">top</span>・・・・・<span class="menu_ja">トップページ</span></a>
+            </li>
+            <li><a href="about.html"><span class="menu_en">about</span>・・<span class="menu_ja">わたしについて</span></a>
+            </li>
+            <li><a href="works.html"><span class="menu_en">works</span>・・・・・・・<span class="menu_ja">制作物</span></a>
+            </li>
           </ul>
         </div>
-        <!--accordion_inner-->
+        <!--.g-nav-list-->
+      </nav>
+      <div class="circle-bg"></div>
+    </div>
+    <!--.sp-only-->
+
+    <div id="accordion-area">
+      <h3 class="title">works index</h3>
+      <div class="accordion_inner">
+        <ul>
+          <li><a href="#portfolio">ポートフォリオ</a></li>
+          <li><a href="#hb-logo">バーガーショップロゴ</a></li>
+          <li><a href="#hair-salon">ヘアサロン(架空)</a></li>
+          <li><a href="#cafe">カフェ(架空)</a></li>
+        </ul>
       </div>
-      <!--.accordion-area-->
-    </header>
+      <!--accordion_inner-->
+    </div>
+    <!--.accordion-area-->
+  </header>
+
+  <div class="wrap">
     <main id="main">
       <div id="contents">
         <section id="portfolio" class="item">
