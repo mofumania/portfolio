@@ -2,21 +2,25 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <meta name="discription"
     content="未経験からweb業界進出を目指し日々勉強中のすずきもえかのポートフォリオサイトです。デザインよりコーディングが好き。HTML/CSS,illustrator,photoshop,jQuery,scriptなんでも手数を増やしていきたいです。">
   <meta name="keyword" content="ポートフォリオ,コーディング,初心者">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>わたしについて｜すずきもえかのポートフォリオサイト</title>
+  <title>すずきもえかのポートフォリオサイト</title>
   <link rel="icon" href="./favicon.png">
+  <!--GoogleFonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="stylesheet" href="./css/common.css" type="text/css">
-  <link rel="stylesheet" href="./css/works.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!--GoogleFonts-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <!--fadeIn-->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/works.css">
+  <script src="https://kit.fontawesome.com/6226cc29d7.js" crossorigin="anonymous"></script>
+  <!--ABomusubi-->
   <script>
     (function(d) {
       var config={
@@ -27,44 +31,58 @@
         h=d.documentElement,t=setTimeout(function() {h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a; h.className+=" wf-loading"; tk.src='https://use.typekit.net/'+config.kitId+'.js'; tk.async=true; tk.onload=tk.onreadystatechange=function() {a=this.readyState; if (f||a&&a!="complete"&&a!="loaded") return; f=true; clearTimeout(t); try {Typekit.load(config)} catch (e) { } }; s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
+  <!--ABomusubi-->
 </head>
 
 <body>
-  <header id="header">
-    <h1><a href="index.html">すずきもえか<br>ポートフォリオ</a></h1>
-    <div id="hamburger-menu">
-      <input type="checkbox" id="menu-btn_check">
-      <label for="menu-btn_check" class="menu-btn"><span></span></label>
-      <div class="nav_contents">
-        <nav>
-          <p class="nav_ttl">MENU</p>
+  <div id="wrap">
+    <header id="header">
+      <div class="header-inner">
+        <h1><a href="index.html"><img src="./img/suzuki-icon.png" alt="アイコン"> すずきもえかの<br>ポートフォリオ</a></h1>
+
+        <nav id="g-nav">
           <ul>
             <li><a href="index.html"><span class="menu_en">top</span><span class="menu_ja">トップページ</span></a></li>
-            <li><a href="profile.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
+            <li><a href="about.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
             <li><a href="works.html"><span class="menu_en">works</span><span class="menu_ja">制作物</span></a></li>
           </ul>
         </nav>
       </div>
-      <!--.nav_contents-->
-    </div>
-    <!--#hamburger-menu-->
-  </header>
+      <!--.header-inner-->
+      <div class="sp-only">
+        <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav_sp">
+          <div id="g-nav-list">
+            <ul>
+              <li><a href="index.html"><span class="menu_en">top</span>・・・・・<span class="menu_ja">トップページ</span></a>
+              </li>
+              <li><a href="about.html"><span class="menu_en">about</span>・・<span class="menu_ja">わたしについて</span></a>
+              </li>
+              <li><a href="works.html"><span class="menu_en">works</span>・・・・・・・<span class="menu_ja">制作物</span></a>
+              </li>
+            </ul>
+          </div>
+          <!--.g-nav-list-->
+        </nav>
+        <div class="circle-bg"></div>
+      </div>
+      <!--.sp-only-->
 
-  <div id="wrap">
-    <main id="main">
       <div id="accordion-area">
         <h3 class="title">works index</h3>
         <div class="accordion_inner">
           <ul>
             <li><a href="#portfolio">ポートフォリオ</a></li>
+            <li><a href="#hb-logo">バーガーショップロゴ</a></li>
             <li><a href="#hair-salon">ヘアサロン(架空)</a></li>
             <li><a href="#cafe">カフェ(架空)</a></li>
-            <li><a href="#hb-logo">バーガーショップロゴ</a></li>
           </ul>
         </div>
         <!--accordion_inner-->
       </div>
       <!--.accordion-area-->
+    </header>
+    <main id="main">
       <div id="contents">
         <section id="portfolio" class="item">
           <h2>ポートフォリオサイト</h2>
@@ -83,7 +101,8 @@
               <dt>レスポンシブ</dt>
               <dd>あり</dd>
               <dt>URL</dt>
-              <dd class="site-url"><a href="https://mofumania.github.io/portfolio/" target="_blank">https://mofumania.github.io/portfolio/</a></dd>
+              <dd class="site-url"><a href="https://mofumania.github.io/portfolio/"
+                  target="_blank">https://mofumania.github.io/portfolio/</a></dd>
               <dt>デザインの意図</dt>
               <dd>
                 シンプルだけど目立つをコンセプトに制作。私のラッキーカラーであるイエローをメインに使用したかったため色数を減らし、トップページはできるだけ情報を減らすことでごちゃごちゃしたイメージにならないよう工夫。また、シンプルすぎてつまらないサイトにならないようにSVG+JSで動きを追加しました。
@@ -93,6 +112,29 @@
           <!--.contents_inner-->
         </section>
         <!--#portfolio-->
+
+        <section id="hb-logo" class="item">
+          <h2>バーガーショップロゴ</h2>
+          <div class="contents_inner">
+            <div class="capture">
+              <img src="./img/meat_meet_burger.jpeg" alt="バーガーショップロゴ画像">
+            </div>
+            <!--.capture-->
+            <dl>
+              <dt>制作時間</dt>
+              <dd>約24時間</dd>
+              <dt>使用ツール</dt>
+              <dd>illustrator</dd>
+              <dt>デザインの意図</dt>
+              <dd>
+                精肉店が始めるハンバーガーショップということでバンズに牛と識別タグをあしらい、文字をジューシーなパティをイメージして制作。アメリカンスタイルのイメージでカラフルな配色にして目を引くデザインにしました。(デザインコンペに参加したものの落選)
+              </dd>
+            </dl>
+          </div>
+          <!--.contents_inner-->
+        </section>
+        <!--hb-logo-->
+
         <section id="hair-salon" class="item">
           <h2>ヘアサロンサイト(架空)</h2>
           <div class="contents_inner">
@@ -121,9 +163,9 @@
             </dl>
           </div>
           <!--.contents_inner-->
-
         </section>
         <!--#hair-salon-->
+
         <section id="cafe" class="item">
           <h2>カフェサイト(架空)</h2>
           <div class="contents_inner">
@@ -152,40 +194,22 @@
           <!--.contents_inner-->
         </section>
         <!--#cafe-->
-        <section id="hb-logo" class="item">
-          <h2>バーガーショップロゴ</h2>
-          <div class="contents_inner">
-            <div class="capture">
-              <img src="./img/meat_meet_burger.jpeg" alt="バーガーショップロゴ画像">
-            </div>
-            <!--.capture-->
-            <dl>
-              <dt>制作時間</dt>
-              <dd>約24時間</dd>
-              <dt>使用ツール</dt>
-              <dd>illustrator</dd>
-              <dt>デザインの意図</dt>
-              <dd>
-                精肉店が始めるハンバーガーショップということでバンズに牛と識別タグをあしらい、文字をジューシーなパティをイメージして制作。アメリカンスタイルのイメージでカラフルな配色にして目を引くデザインにしました。(デザインコンペに参加したものの落選)
-              </dd>
-            </dl>
-          </div>
-          <!--.contents_inner-->
-
-        </section>
-        <!--hb-logo-->
       </div>
       <!--#contents-->
     </main>
   </div>
   <!--#wrap-->
-
   <footer id="footer">
     <p id="page-top"><a href="#"></a></p>
     <p class="copyright">&copy;2022 suzuki moeka's portforio</p>
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+  <!-- inview -->
+  <script src="./js/common.js"></script>
   <script src="./js/works.js"></script>
 </body>
 

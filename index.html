@@ -1,212 +1,264 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="discription"
-		content="未経験からweb業界進出を目指し日々勉強中のすずきもえかのポートフォリオサイトです。デザインよりコーディングが好き。HTML/CSS,illustrator,photoshop,jQuery,scriptなんでも手数を増やしていきたいです。">
-	<meta name="keyword" content="ポートフォリオ,コーディング,初心者">
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<title>すずきもえかのポートフォリオサイト</title>
-	<link rel="icon" href="./favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-	<link rel="stylesheet" href="./css/common.css" type="text/css">
-	<link rel="stylesheet" href="./css/style.css" type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-	<script>
-		(function(d) {
-			var config={
-				kitId: 'oej2khr',
-				scriptTimeout: 3000,
-				async: true
-			},
-				h=d.documentElement,t=setTimeout(function() {h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a; h.className+=" wf-loading"; tk.src='https://use.typekit.net/'+config.kitId+'.js'; tk.async=true; tk.onload=tk.onreadystatechange=function() {a=this.readyState; if (f||a&&a!="complete"&&a!="loaded") return; f=true; clearTimeout(t); try {Typekit.load(config)} catch (e) { } }; s.parentNode.insertBefore(tk,s)
-		})(document);
-	</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="discription"
+    content="未経験からweb業界進出を目指し日々勉強中のすずきもえかのポートフォリオサイトです。デザインよりコーディングが好き。HTML/CSS,illustrator,photoshop,jQuery,scriptなんでも手数を増やしていきたいです。">
+  <meta name="keyword" content="ポートフォリオ,コーディング,初心者">
+  <title>すずきもえかのポートフォリオサイト</title>
+  <link rel="icon" href="./favicon.png">
+  <!--GoogleFonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!--GoogleFonts-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <!--fadeIn-->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/6226cc29d7.js" crossorigin="anonymous"></script>
+  <!--ABomusubi-->
+  <script>
+    (function(d) {
+      var config={
+        kitId: 'oej2khr',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h=d.documentElement,t=setTimeout(function() {h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a; h.className+=" wf-loading"; tk.src='https://use.typekit.net/'+config.kitId+'.js'; tk.async=true; tk.onload=tk.onreadystatechange=function() {a=this.readyState; if (f||a&&a!="complete"&&a!="loaded") return; f=true; clearTimeout(t); try {Typekit.load(config)} catch (e) { } }; s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <!--ABomusubi-->
 </head>
 
 <body>
-	<header id="header">
-		<h1><a href="index.html">すずきもえか<br>ポートフォリオ</a></h1>
-		<div id="hamburger-menu">
-			<input type="checkbox" id="menu-btn_check">
-			<label for="menu-btn_check" class="menu-btn"><span></span></label>
-			<div class="nav_contents">
-				<nav>
-					<p class="nav_ttl">MENU</p>
-					<ul>
-						<li><a href="index.html"><span class="menu_en">top</span><span class="menu_ja">トップページ</span></a></li>
-						<li><a href="profile.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
-						<li><a href="works.html"><span class="menu_en">works</span><span class="menu_ja">制作物</span></a></li>
-					</ul>
-				</nav>
-			</div>
-			<!--.nav_contents-->
-		</div>
-		<!--#hamburger-menu-->
-	</header>
+  <div id="wrap">
+    <header id="header">
+      <div class="header-inner">
+        <h1><a href="index.html"><img src="./img/suzuki-icon.png" alt="アイコン"> すずきもえかの<br>ポートフォリオ</a></h1>
 
-	<div id="wrap">
-		<div id="mainvisual">
-			<svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-				y="0px" viewBox="0 0 1500 200" style="enable-background:new 0 0 1500 200;" xml:space="preserve">
-				<g>
-					<path d="M114.92,129.38c0-3-1.8-5.4-3.6-7.2c-5.1-5.4-15-8.7-24.9-8.7c-31.2,0-55.8-18.6-55.8-42.6
-							c0-24,24.6-42.9,55.8-42.9s55.5,18.9,55.5,42.9c0,7.5-6,13.5-13.5,13.5c-7.5,0-12.3-6.3-13.5-13.5c-1.2-7.8-12.3-15.9-28.5-15.9
-							c-16.5,0-28.8,8.4-28.8,15.9s10.5,15.6,28.2,15.6s34.2,6.3,44.7,16.8c7.5,7.2,11.4,16.5,11.4,26.1c0,24-24.3,42.9-55.5,42.9
-							c-17.7,0-33.9-6-44.4-16.8c-7.2-7.2-11.4-16.5-11.4-26.1c0-7.5,6-13.5,13.5-13.5s12.6,5.7,13.5,13.5c0.3,3,2.1,5.4,3.6,7.2
-							c5.4,5.4,15,8.7,25.2,8.7C102.62,145.28,114.92,136.88,114.92,129.38z" />
-					<path d="M163.52,117.53v-77.4c0-7.2,6-13.5,13.5-13.5s13.5,6.3,13.5,13.5v77.4c0,16.2,13.2,29.1,29.4,29.1
-							s29.4-12.9,29.4-29.1v-77.4c0-7.2,6-13.5,13.5-13.5c7.2,0,13.5,6.3,13.5,13.5v77.4c0,30.9-25.5,56.1-56.4,56.1
-							C188.72,173.63,163.52,148.43,163.52,117.53z" />
-					<path d="M425.42,51.73l-85.2,84.9h75.6c7.5,0,13.5,6.3,13.5,13.8c0,7.2-6,13.2-13.5,13.2h-108c-0.9,0-1.8,0-2.7,0
-							c-0.6-0.3-0.9-0.3-1.2-0.6c-0.6,0-0.9,0-1.5-0.3c-0.3-0.3-0.9-0.3-1.2-0.6c-0.3-0.3-0.6-0.3-0.9-0.6c-0.9-0.6-1.5-1.2-2.1-1.8
-							c-0.6-0.6-1.2-1.2-1.8-2.1c-0.3-0.3-0.3-0.6-0.6-0.9c-0.3-0.6-0.3-0.9-0.6-1.2c-0.3-0.6-0.3-0.9-0.3-1.5c-0.3-0.3-0.3-0.6-0.6-1.2
-							c-0.3-1.8-0.3-3.6,0-5.1c0.3-0.6,0.3-0.9,0.6-1.2c0-0.6,0-0.9,0.3-1.5c0.3-0.3,0.3-0.9,0.6-1.2c0.3-0.3,0.3-0.6,0.6-1.2
-							c0.6-0.6,1.2-1.2,1.8-1.8l85.2-85.2h-75.6c-7.5,0-13.5-6-13.5-13.5s6-13.5,13.5-13.5h108c0.9,0,1.8,0,2.7,0.3c0.6,0,0.9,0,1.2,0.3
-							c0.6,0,0.9,0.3,1.5,0.3c0.3,0.3,0.6,0.6,1.2,0.6c0.3,0.3,0.6,0.6,0.9,0.6c0.9,0.6,1.5,1.2,2.1,1.5c0,0.3,0,0.3,0,0.3h0.3
-							c0.6,0.6,0.9,1.2,1.5,2.1c0.3,0.3,0.3,0.6,0.6,0.9c0.3,0.6,0.3,0.9,0.6,1.2c0.3,0.6,0.3,1.2,0.3,1.5c0.3,0.3,0.3,0.9,0.6,1.2
-							c0.3,1.8,0.3,3.6,0,5.4c-0.3,0.3-0.3,0.6-0.6,0.9c0,0.6,0,0.9-0.3,1.5c-0.3,0.3-0.3,0.9-0.6,1.2c-0.3,0.3-0.3,0.6-0.6,1.2
-							c-0.6,0.6-0.9,1.2-1.5,1.8C425.72,51.43,425.42,51.43,425.42,51.73z" />
-					<path d="M447.32,117.53v-77.4c0-7.2,6-13.5,13.5-13.5s13.5,6.3,13.5,13.5v77.4c0,16.2,13.2,29.1,29.4,29.1
-							c16.2,0,29.4-12.9,29.4-29.1v-77.4c0-7.2,6-13.5,13.5-13.5c7.2,0,13.5,6.3,13.5,13.5v77.4c0,30.9-25.5,56.1-56.4,56.1
-							C472.52,173.63,447.32,148.43,447.32,117.53z" />
-					<path class="st0" d="M584.72,160.13v-120c0-7.2,6-13.5,13.5-13.5c7.5,0,13.5,6.3,13.5,13.5v42.3l50.1-50.1c5.4-5.4,13.8-5.4,19.2,0
-							c2.4,2.4,3.9,6,3.9,9.3c0,3.6-1.5,7.2-3.9,9.6c0,0-35.7,35.7-49.2,49.2c13.5,13.5,49.2,49.2,49.2,49.2c2.4,2.7,3.9,6.3,3.9,9.6
-							c0,3.6-1.5,6.9-3.9,9.6c-5.4,5.4-13.8,5.4-19.2,0l-50.1-50.1v41.4c0,7.5-6,13.5-13.5,13.5
-							C590.72,173.63,584.72,167.63,584.72,160.13z" />
-					<path d="M712.22,160.13v-120c0-7.2,6-13.5,13.5-13.5c7.2,0,13.5,6.3,13.5,13.5v120c0,7.5-6.3,13.5-13.5,13.5
-							C718.22,173.63,712.22,167.63,712.22,160.13z" />
-					<path d="M770.77,159.98v-92.4c0-22.5,18.3-40.8,40.8-40.8c10.5,0,19.8,3.9,27,10.5c7.5-6.6,17.1-10.5,27.3-10.5
-							c22.2,0,40.5,18.3,40.5,40.8v92.4c0,7.5-6,13.5-13.5,13.5s-13.5-6-13.5-13.5v-92.4c0-7.5-6-13.8-13.5-13.8c-3.6,0-7.2,1.5-9.6,3.9
-							c-2.7,2.7-4.2,6-4.2,9.9v92.4c0,7.5-6,13.5-13.5,13.5s-13.5-6-13.5-13.5v-92.4c0-7.5-6-13.8-13.5-13.8s-13.8,6.3-13.8,13.8v92.4
-							c0,7.5-6,13.5-13.5,13.5S770.77,167.48,770.77,159.98z" />
-					<path d="M939.97,150.83c-13.2-13.5-20.7-31.5-20.7-50.7c0-18.9,7.5-36.9,20.7-50.4c13.5-13.5,31.5-21,50.7-21
-							s36.9,7.5,50.4,21c13.5,13.5,21,31.5,21,50.4c0,39.6-32.1,71.4-71.4,71.4C971.47,171.53,953.47,164.33,939.97,150.83z
-							 M946.27,100.13c0,12,4.5,23.1,12.9,31.5s19.5,12.9,31.5,12.9c24.6,0,44.4-19.8,44.4-44.4c0-11.7-4.5-22.8-12.9-31.2
-							c-8.4-8.4-19.5-13.2-31.5-13.2c-12,0-23.1,4.8-31.5,13.2C950.77,77.33,946.27,88.43,946.27,100.13z" />
-					<path d="M1110.37,53.63v33h70.5c7.5,0,13.5,6.3,13.5,13.5c0,7.5-6,13.5-13.5,13.5h-70.5v33h70.5
-							c7.5,0,13.5,6.3,13.5,13.5c0,7.5-6,13.5-13.5,13.5h-84c-7.5,0-13.5-6-13.5-13.5v-120c0-7.2,6-13.5,13.5-13.5h84
-							c7.5,0,13.5,6.3,13.5,13.5c0,7.5-6,13.5-13.5,13.5H1110.37z" />
-					<path
-						d="M1220.77,160.13v-120c0-7.2,6-13.5,13.5-13.5s13.5,6.3,13.5,13.5v42.3l50.1-50.1c5.4-5.4,13.8-5.4,19.2,0
-							c2.4,2.4,3.9,6,3.9,9.3c0,3.6-1.5,7.2-3.9,9.6c0,0-35.7,35.7-49.2,49.2c13.5,13.5,49.2,49.2,49.2,49.2c2.4,2.7,3.9,6.3,3.9,9.6
-							c0,3.6-1.5,6.9-3.9,9.6c-5.4,5.4-13.8,5.4-19.2,0l-50.1-50.1v41.4c0,7.5-6,13.5-13.5,13.5S1220.77,167.63,1220.77,160.13z" />
-					<path d="M1343.17,155.23l50.1-120.6c2.1-5.1,7.2-8.4,12.6-8.4c5.4,0,10.5,3.3,12.6,8.4l49.8,120.9
-							c3,6.9-0.3,14.7-7.2,17.4c-6.9,3-15-0.3-17.7-7.2c0,0-4.8-11.7-11.4-27.6h-52.2c-6.9,15.9-11.7,27.6-11.7,27.6
-							c-2.7,6.9-10.8,10.2-17.4,7.2C1343.77,169.93,1340.47,162.13,1343.17,155.23z M1390.87,111.13h30c-5.4-12.6-10.8-25.5-15-36.3
-							C1401.37,85.63,1395.97,98.53,1390.87,111.13z" />
-				</g>
-			</svg>
-			<div class="scrolldown"><span>scroll</span></div>
-		</div>
-		<!--#mainvisual-->
-		<h2 class="fadein">Portfolio</h2>
-		<main id="main">
-			<section id="about">
-				<div class="about_inner">
-					<h2>about</h2>
-					<div class="prof fadeInUpTrigger">
-						<img src="./img/suzuki.png" alt="すずきもえか">
-						<div class="prof_inner">
-							<h3>すずき　もえか</h3>
-							<p class="text">
-								1995年生まれ。愛知県出身、在住。<br>2022年からwebデザインを勉強中。<br><span>知らないを知っているに変えることが好き</span>で、<br
-									class="no-pc">気になったことはなんでも調べます。</p>
-							<a class="btn btn-border-sahdow border-radius" href="profile.html">もっとくわしく</a>
-						</div>
-						<!--.prof_inner-->
-					</div>
-					<!--.prof-->
+        <nav id="g-nav">
+          <ul>
+            <li><a href="index.html"><span class="menu_en">top</span><span class="menu_ja">トップページ</span></a></li>
+            <li><a href="about.html"><span class="menu_en">about</span><span class="menu_ja">わたしについて</span></a></li>
+            <li><a href="works.html"><span class="menu_en">works</span><span class="menu_ja">制作物</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--.header-inner-->
+      <div class="sp-only">
+        <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav_sp">
+          <div id="g-nav-list">
+            <ul>
+              <li><a href="index.html"><span class="menu_en">top</span>・・・・・<span class="menu_ja">トップページ</span></a>
+              </li>
+              <li><a href="about.html"><span class="menu_en">about</span>・・<span class="menu_ja">わたしについて</span></a>
+              </li>
+              <li><a href="works.html"><span class="menu_en">works</span>・・・・・・・<span class="menu_ja">制作物</span></a>
+              </li>
+            </ul>
+          </div>
+          <!--.g-nav-list-->
+        </nav>
+        <div class="circle-bg"></div>
+      </div>
+      <!--.sp-only-->
+    </header>
+    <main id="main">
+      <div id="hero">
+        <div class="hero-inner">
+          <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 1500 200" style="overflow:visible;enable-background:new 0 0 1500 200;"
+            xml:space="preserve">
+            <g>
+              <path d="M114.92,129.38c0-3-1.8-5.4-3.6-7.2c-5.1-5.4-15-8.7-24.9-8.7c-31.2,0-55.8-18.6-55.8-42.6
+            c0-24,24.6-42.9,55.8-42.9s55.5,18.9,55.5,42.9c0,7.5-6,13.5-13.5,13.5c-7.5,0-12.3-6.3-13.5-13.5c-1.2-7.8-12.3-15.9-28.5-15.9
+            c-16.5,0-28.8,8.4-28.8,15.9s10.5,15.6,28.2,15.6s34.2,6.3,44.7,16.8c7.5,7.2,11.4,16.5,11.4,26.1c0,24-24.3,42.9-55.5,42.9
+            c-17.7,0-33.9-6-44.4-16.8c-7.2-7.2-11.4-16.5-11.4-26.1c0-7.5,6-13.5,13.5-13.5s12.6,5.7,13.5,13.5c0.3,3,2.1,5.4,3.6,7.2
+            c5.4,5.4,15,8.7,25.2,8.7C102.62,145.28,114.92,136.88,114.92,129.38z" />
+              <path d="M163.52,117.53v-77.4c0-7.2,6-13.5,13.5-13.5s13.5,6.3,13.5,13.5v77.4c0,16.2,13.2,29.1,29.4,29.1
+            s29.4-12.9,29.4-29.1v-77.4c0-7.2,6-13.5,13.5-13.5c7.2,0,13.5,6.3,13.5,13.5v77.4c0,30.9-25.5,56.1-56.4,56.1
+            C188.72,173.63,163.52,148.43,163.52,117.53z" />
+              <path d="M425.42,51.73l-85.2,84.9h75.6c7.5,0,13.5,6.3,13.5,13.8c0,7.2-6,13.2-13.5,13.2h-108c-0.9,0-1.8,0-2.7,0
+            c-0.6-0.3-0.9-0.3-1.2-0.6c-0.6,0-0.9,0-1.5-0.3c-0.3-0.3-0.9-0.3-1.2-0.6c-0.3-0.3-0.6-0.3-0.9-0.6c-0.9-0.6-1.5-1.2-2.1-1.8
+            c-0.6-0.6-1.2-1.2-1.8-2.1c-0.3-0.3-0.3-0.6-0.6-0.9c-0.3-0.6-0.3-0.9-0.6-1.2c-0.3-0.6-0.3-0.9-0.3-1.5c-0.3-0.3-0.3-0.6-0.6-1.2
+            c-0.3-1.8-0.3-3.6,0-5.1c0.3-0.6,0.3-0.9,0.6-1.2c0-0.6,0-0.9,0.3-1.5c0.3-0.3,0.3-0.9,0.6-1.2c0.3-0.3,0.3-0.6,0.6-1.2
+            c0.6-0.6,1.2-1.2,1.8-1.8l85.2-85.2h-75.6c-7.5,0-13.5-6-13.5-13.5s6-13.5,13.5-13.5h108c0.9,0,1.8,0,2.7,0.3c0.6,0,0.9,0,1.2,0.3
+            c0.6,0,0.9,0.3,1.5,0.3c0.3,0.3,0.6,0.6,1.2,0.6c0.3,0.3,0.6,0.6,0.9,0.6c0.9,0.6,1.5,1.2,2.1,1.5c0,0.3,0,0.3,0,0.3h0.3
+            c0.6,0.6,0.9,1.2,1.5,2.1c0.3,0.3,0.3,0.6,0.6,0.9c0.3,0.6,0.3,0.9,0.6,1.2c0.3,0.6,0.3,1.2,0.3,1.5c0.3,0.3,0.3,0.9,0.6,1.2
+            c0.3,1.8,0.3,3.6,0,5.4c-0.3,0.3-0.3,0.6-0.6,0.9c0,0.6,0,0.9-0.3,1.5c-0.3,0.3-0.3,0.9-0.6,1.2c-0.3,0.3-0.3,0.6-0.6,1.2
+            c-0.6,0.6-0.9,1.2-1.5,1.8C425.72,51.43,425.42,51.43,425.42,51.73z" />
+              <path d="M447.32,117.53v-77.4c0-7.2,6-13.5,13.5-13.5s13.5,6.3,13.5,13.5v77.4c0,16.2,13.2,29.1,29.4,29.1
+            c16.2,0,29.4-12.9,29.4-29.1v-77.4c0-7.2,6-13.5,13.5-13.5c7.2,0,13.5,6.3,13.5,13.5v77.4c0,30.9-25.5,56.1-56.4,56.1
+            C472.52,173.63,447.32,148.43,447.32,117.53z" />
+              <path class="st0" d="M584.72,160.13v-120c0-7.2,6-13.5,13.5-13.5c7.5,0,13.5,6.3,13.5,13.5v42.3l50.1-50.1c5.4-5.4,13.8-5.4,19.2,0
+            c2.4,2.4,3.9,6,3.9,9.3c0,3.6-1.5,7.2-3.9,9.6c0,0-35.7,35.7-49.2,49.2c13.5,13.5,49.2,49.2,49.2,49.2c2.4,2.7,3.9,6.3,3.9,9.6
+            c0,3.6-1.5,6.9-3.9,9.6c-5.4,5.4-13.8,5.4-19.2,0l-50.1-50.1v41.4c0,7.5-6,13.5-13.5,13.5
+            C590.72,173.63,584.72,167.63,584.72,160.13z" />
+              <path d="M712.22,160.13v-120c0-7.2,6-13.5,13.5-13.5c7.2,0,13.5,6.3,13.5,13.5v120c0,7.5-6.3,13.5-13.5,13.5
+            C718.22,173.63,712.22,167.63,712.22,160.13z" />
+              <path d="M770.77,159.98v-92.4c0-22.5,18.3-40.8,40.8-40.8c10.5,0,19.8,3.9,27,10.5c7.5-6.6,17.1-10.5,27.3-10.5
+            c22.2,0,40.5,18.3,40.5,40.8v92.4c0,7.5-6,13.5-13.5,13.5s-13.5-6-13.5-13.5v-92.4c0-7.5-6-13.8-13.5-13.8c-3.6,0-7.2,1.5-9.6,3.9
+            c-2.7,2.7-4.2,6-4.2,9.9v92.4c0,7.5-6,13.5-13.5,13.5s-13.5-6-13.5-13.5v-92.4c0-7.5-6-13.8-13.5-13.8s-13.8,6.3-13.8,13.8v92.4
+            c0,7.5-6,13.5-13.5,13.5S770.77,167.48,770.77,159.98z" />
+              <path d="M939.97,150.83c-13.2-13.5-20.7-31.5-20.7-50.7c0-18.9,7.5-36.9,20.7-50.4c13.5-13.5,31.5-21,50.7-21
+            s36.9,7.5,50.4,21c13.5,13.5,21,31.5,21,50.4c0,39.6-32.1,71.4-71.4,71.4C971.47,171.53,953.47,164.33,939.97,150.83z M946.27,100.13c0,12,4.5,23.1,12.9,31.5s19.5,12.9,31.5,12.9c24.6,0,44.4-19.8,44.4-44.4c0-11.7-4.5-22.8-12.9-31.2
+            c-8.4-8.4-19.5-13.2-31.5-13.2c-12,0-23.1,4.8-31.5,13.2C950.77,77.33,946.27,88.43,946.27,100.13z" />
+              <path d="M1110.37,53.63v33h70.5c7.5,0,13.5,6.3,13.5,13.5c0,7.5-6,13.5-13.5,13.5h-70.5v33h70.5
+            c7.5,0,13.5,6.3,13.5,13.5c0,7.5-6,13.5-13.5,13.5h-84c-7.5,0-13.5-6-13.5-13.5v-120c0-7.2,6-13.5,13.5-13.5h84
+            c7.5,0,13.5,6.3,13.5,13.5c0,7.5-6,13.5-13.5,13.5H1110.37z" />
+              <path
+                d="M1220.77,160.13v-120c0-7.2,6-13.5,13.5-13.5s13.5,6.3,13.5,13.5v42.3l50.1-50.1c5.4-5.4,13.8-5.4,19.2,0
+            c2.4,2.4,3.9,6,3.9,9.3c0,3.6-1.5,7.2-3.9,9.6c0,0-35.7,35.7-49.2,49.2c13.5,13.5,49.2,49.2,49.2,49.2c2.4,2.7,3.9,6.3,3.9,9.6
+            c0,3.6-1.5,6.9-3.9,9.6c-5.4,5.4-13.8,5.4-19.2,0l-50.1-50.1v41.4c0,7.5-6,13.5-13.5,13.5S1220.77,167.63,1220.77,160.13z" />
+              <path d="M1343.17,155.23l50.1-120.6c2.1-5.1,7.2-8.4,12.6-8.4c5.4,0,10.5,3.3,12.6,8.4l49.8,120.9
+            c3,6.9-0.3,14.7-7.2,17.4c-6.9,3-15-0.3-17.7-7.2c0,0-4.8-11.7-11.4-27.6h-52.2c-6.9,15.9-11.7,27.6-11.7,27.6
+            c-2.7,6.9-10.8,10.2-17.4,7.2C1343.77,169.93,1340.47,162.13,1343.17,155.23z M1390.87,111.13h30c-5.4-12.6-10.8-25.5-15-36.3
+            C1401.37,85.63,1395.97,98.53,1390.87,111.13z" />
+            </g>
+          </svg>
+          <h2 class="fadein">portfolio</h2>
+        </div>
+        <!--.hero-inner-->
+        <div class="scrolldown"><span>scroll</span></div>
+      </div>
+      <!--#hero-->
+      <section id="about" class="contents">
+        <h3>about</h3>
+        <div class="prof fadeInUpTrigger">
+          <img src="./img/suzuki.png" alt="すずきもえか" width="596" height="596">
+          <div class="prof-inner">
+            <h4>すずき　もえか</h4>
+            <p class="txt">1995年生まれ。愛知県出身、在住。<br>2022年1月からwebデザインを勉強中。<br>知らないを知っているに変えることが好きで、<br>気になったことはなんでも調べます。
+            </p>
+            <a class="btn btn-border-sahdow border-radius" href="about.html">もっとくわしく</a>
+          </div>
+          <!--.prof-inner-->
+        </div>
+        <!--.prof-->
+        <div id="skill">
+          <div class="skill-item fadeInUpTrigger01">
+            <div class="skill-item-inner">
+              <h5>HTML</h5>
+              <p>2022年1月勉強開始<br>JavaScript勉強中</p>
+            </div>
+            <!--.skill-item-inner-->
+          </div>
+          <!--.skill-item-->
 
-					<div class="skill">
-						<div class="skill_inner fadeInUpTrigger2">
-							<div class="skill_item">
-								<div class="skill_item-inner">
-									<h3>HTML</h3>
-									<p>2022年勉強開始<br>今後scriptも勉強予定</p>
-								</div>
-								<!--.skill_item-inner-->
-							</div>
-							<!--.skill_item-->
-						</div>
-						<!--.skill_inner-->
+          <div class="skill-item fadeInUpTrigger02">
+            <h5>CSS</h5>
+            <p>2022年1月勉強開始<br>jQuery勉強中<br>Sass勉強予定</p>
+          </div>
+          <!--.skill-item-->
 
-						<div class="skill_inner fadeInUpTrigger3">
-							<div class="skill_item">
-								<div class="skill_item-inner">
-									<h3>CSS</h3>
-									<p>2022年勉強開始<br>Sass, jQuery勉強中</p>
-								</div>
-								<!--.skill_item-inner-->
-							</div>
-							<!--.skill_item-->
-						</div>
-						<!--.skill_inner-->
+          <div class="skill-item fadeInUpTrigger03">
+            <h5>illustrator</h5>
+            <p>2016年<br>クリエイター能力<br>認定試験EX取得</p>
+          </div>
+          <!--.skill-item-->
 
-						<div class="skill_inner fadeInUpTrigger4">
-							<div class="skill_item">
-								<div class="skill_item-inner">
-									<h3>illustrator</h3>
-									<p>クリエイター<br>能力認定試験<br>エキスパート取得</p>
-								</div>
-								<!--.skill_item-inner-->
-							</div>
-							<!--.skill_item-->
-						</div>
-						<!--.skill_inner-->
+          <div class="skill-item fadeInUpTrigger04">
+            <h5>photoshop</h5>
+            <p>2016年<br>クリエイター能力<br>認定試験EX取得</p>
+          </div>
+          <!--.skill-item-->
+        </div>
+        <!--#skill-->
+      </section>
+      <!--#about-->
+      <section id="works" class="contents">
+        <h3>works</h3>
+        <div class="works-inner">
+          <ul>
+            <li class="card-item card-item01">
+              <a href="works.html#portfolio">
+                <div class="card-front"></div>
+                <!--.card-front-->
+                <div class="card-back">
+                  <div class="card-back-inner">
+                    <h6>portfolio<span>ポートフォリオサイト</span></h6>
+                    <p>2022年8月制作</p>
+                  </div>
+                  <!--.card-back-inner-->
+                </div>
+                <!--.card-back-->
+              </a>
+            </li>
 
-						<div class="skill_inner fadeInUpTrigger5">
-							<div class="skill_item">
-								<div class="skill_item-inner">
-									<h3>photoshop</h3>
-									<p>クリエイター<br>能力認定試験<br>エキスパート取得</p>
-								</div>
-								<!--.skill_item-inner-->
-							</div>
-							<!--.skill_item-->
-						</div>
-						<!--.skill_inner-->
-					</div>
-					<!--.skill-->
-				</div>
-				<!--.about-inner-->
-			</section>
-			<!--#about-->
-			<section id="works">
-				<div class="works_inner">
-					<h2>works</h2>
-					<ul class="slider">
-						<li><a href="#"><img src="./img/portfolio.jpg" alt="すずきもえかのポートフォリオサイト"></a></li>
-						<li><a href="#"><img src="./img/solace.jpg" alt="架空の美容室サイト"></a></li>
-						<li><a href="#"><img src="./img/cafe_cafe_cafe.jpg" alt="架空のカフェサイト"></a></li>
-						<li><a href="#"><img src="./img/mmb_width.png" alt="ハンバーガーショップロゴデザインコンペ参加作品"></a></li>
-						<!--/slider-->
-					</ul>
-				</div>
-				<!--.works_inner-->
-			</section>
-			<!--#works-->
-		</main>
-	</div>
-	<!--#wrap-->
+            <li class="card-item card-item02">
+              <a href="works.html#hb-logo">
+                <div class="card-front"></div>
+                <!--.card-front-->
+                <div class="card-back">
+                  <div class="card-back-inner">
+                    <h6>burgershop logo<span>バーガーショップロゴ</span></h6>
+                    <p>2022年7月制作</p>
+                  </div>
+                  <!--.card-back-inner-->
+                </div>
+                <!--.card-back-->
+              </a>
+            </li>
 
-	<footer id="footer">
-		<p id="page-top"><a href="#"></a></p>
-		<p class="copyright">&copy;2022 suzuki moeka's portforio</p>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"> </script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="./js/index.js"></script>
+            <li class="card-item card-item03">
+              <a href="works.html#hair-salon">
+                <div class="card-front"></div>
+                <!--.card-front-->
+                <div class="card-back">
+                  <div class="card-back-inner">
+                    <h6>hair salon(fict.)<span>ヘアサロンサイト(架空)</span></h6>
+                    <p>2022年6月制作</p>
+                  </div>
+                  <!--.card-back-inner-->
+                </div>
+                <!--.card-back-->
+              </a>
+            </li>
+
+            <li class="card-item  card-item04">
+              <a href="works.html#cafe">
+                <div class="card-front"></div>
+                <!--.card-front-->
+                <div class="card-back">
+                  <div class="card-back-inner">
+                    <h6>cafe(fict.)<span>カフェサイト(架空)</span></h6>
+                    <p>2022年6月制作</p>
+                  </div>
+                  <!--.card-back-inner-->
+                </div>
+                <!--.card-back-->
+              </a>
+            </li>
+            <li class="card-item"><img src="./img/coming_soon.jpg" alt="comingsoon"></li>
+            <li class="card-item"><img src="./img/coming_soon.jpg" alt="comingsoon"></li>
+          </ul>
+          <a class="btn btn-border-sahdow border-radius" href="works.html">すべての制作物</a>
+        </div>
+        <!--.works-inner-->
+      </section>
+      <!--#works-->
+    </main>
+  </div>
+  <!--#wrap-->
+  <footer id="footer">
+    <p id="page-top"><a href="#"></a></p>
+    <p class="copyright">&copy;2022 suzuki moeka's portforio</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"> </script>
+  <!--svg/vivus.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+  <!-- inview -->
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

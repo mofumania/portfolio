@@ -1,20 +1,15 @@
-#wrap {
-  max-width: 66%;
-  width: 100%;
-  margin: 0 auto;
+#main {
+  position: relative;
+  margin-bottom: 200px;
 }
 
-#main {
-  padding-top: 84px;
-}
 /*---▼#accordion-areaここから▼---*/
 #accordion-area {
   max-width: 100%;
-  width: 700px;
-  background-color: #fae06a;
+  width: 100%;
   margin: 0 auto;
-  position: fixed;
-  top: 32px;
+  background-color: #fae06a;
+  position: sticky;
   z-index: 110;
 }
 
@@ -94,15 +89,30 @@
 
 /*---▼.contentsここから▼---*/
 #contents h2 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
-  padding-top: 140px;
+  padding-top: 200px;
+}
+
+@media (max-width: 767px) {
+  #contents h2 {
+    padding-top: 220px;
+    text-align: center;
+  }
 }
 
 #contents .contents_inner {
   display: flex;
-  justify-content: space-around;
-  padding-top: 20px;
+  justify-content: center;
+  gap: 80px;
+  padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+  #contents .contents_inner {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 }
 
 #contents .capture {
@@ -142,44 +152,4 @@
 
 #contents .contents_inner .site-url:hover {
   text-decoration: underline;
-}
-
-#footer {
-  margin-top: 100px;
-}
-
-@media screen and (max-width: 1024px) {
-  #accordion-area {
-    width: 100%;
-  }
-
-  #contents .contents_inner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #contents h2 {
-    text-align: center;
-    padding-top: 154px;
-  }
-
-  #contents .contents_inner dl {
-    width: 100%;
-  }
-
-  #contents .contents_inner .site-url {
-    font-size: 14px;
-    text-decoration: underline;
-  }
-}
-
-@media screen and (max-width: 599px) {
-  #accordion-area {
-    top: 60px;
-    left: 18px;
-  }
-
-  #contents .capture {
-    width: 100%;
-  }
 }
