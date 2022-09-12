@@ -144,6 +144,8 @@ h3 {
 #about .prof img {
   width: clamp(180px, 19vw, 220px);
   height: clamp(180px, 19vw, 220px);
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px rgb(14 83 109 / 25%);
 }
 
 #about .prof-inner {
